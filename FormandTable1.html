@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./FormandTable1.css">
+    <title>sample</title>
+</head>
+<body>
+    <div>
+        <div class="formPage">
+            <form action="Biodata">
+                <div class="nam">
+                    <label for="Name">Name:-</label><br>
+                    <input type="text" id="name" name="Name">
+                    <div class="age">
+                        <label for="Age">Age:-</label><br>
+                        <input type="number" id="ag" name="Age">
+                    </div><br>
+                    <div>
+                        <label for="Country">Nationality:-</label>
+                        <select id="con">
+                            <option value="SEL" selected>---Select a Country---</option>
+                            <option value="AUS">Australia</option>
+                            <option value="CAN">Canada</option>
+                            <option value="CHINA">China</option>
+                            <option value="IND">India</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="USA">United States of America</option>
+                        </select>
+                        <label for="State">State:-</label>
+                        <select id="ste">
+                            <option value="SEL" selected>---Select a State---</option>
+                            <option value="AP">AndhraPradesh</option>
+                            <option value="DeL">Delhi</option>
+                            <option value="KAR">Karnataka</option>
+                            <option value="KER">Kerala</option>
+                            <option value="TN">TamilNadu</option>
+                        </Select>
+                        <label for="City">City:-</label>
+                        <select id="ct">
+                            <option value="SEL" selected>---Select a City---</option>
+                            <option value="BAN">Banglore</option>
+                            <option value="CHN">Chennai</option>
+                            <option value="MUM">Mumbai</option>
+                            <option value="HYD">Hyderabad</option>
+                            <option value="KOCHI">Kochi</option>
+                        </select></div><br>
+                    <div>
+                        <label for="gender">Gender:-</label>
+                        <input type="radio" name="gender" id="gen" value="male" selected>Male
+                        <input type="radio" name="gender" id="gen" value="female">Female
+                        <input type="radio" name="gender" id="gen" value="other">Other
+                        <br>
+                        <br>
+                        <label for="Marital Status">Marrital Status:-</label>
+                        <input type="radio" name="maritalstatus" id="mars" value="single">Single
+                        <input type="radio" name="maritalstatus" id="mars" value="married">Married
+                    </div><br>
+                    <div>
+                        <label for="skills">Skills:-</label>
+                        <input type="checkbox" name="skills[]" value="HTML" id="skl">HTML
+                        <input type="checkbox" name="skills[]" value="CSS" id="skl">CSS
+                        <input type="checkbox" name="skills[]" value="Js" id="skl">Js
+                        <input type="checkbox" name="skills[]" value="Py" id="skl">Python
+                    </div><br>
+                    <div class="about">
+                        <label for="about">Tell About yourself :</label><br>
+                        <textarea name="about" id="abt"></textarea>
+                    </div>
+                    <input type="button" value="Submit" onclick="ft();return false">
+            </form>
+        </div>
+        <div class="datatable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Gender</th>
+                        <th>Marital Status</th>
+                        <th>Skills</th>
+                        <th>About</th>
+                    </tr>
+                </thead>
+                <tbody id="tr1">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./FormandTable1.js">
+    </script>
+</body>
+</html>

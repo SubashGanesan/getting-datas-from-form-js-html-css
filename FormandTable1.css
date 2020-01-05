@@ -1,0 +1,43 @@
+body{
+    margin:10px;
+    padding:10px;
+    background-color: rgb(231, 230, 230);
+}
+.formPage{
+    position:absolute;
+    Padding:50px;
+    float:left;
+    margin: 10px 50px 0px 30px;
+    background-color: rgb(161, 221, 245);
+    height:80%;
+    }
+.datatable{
+    position:absolute;
+    Padding:50px;
+    float:left;
+    margin: -62px 50px 0px 726px;
+    background-color: rgb(248, 171, 158);
+    Width:77%;
+    height:80%;
+}
+.about > textarea{
+    width:70%;
+    height: 100px;
+}
+.about>label{
+
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding:5x;
+}
+.nam{
+    float:left;
+}
+.age{
+    float:right;
+    padding-right:25px;
+}
